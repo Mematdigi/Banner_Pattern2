@@ -1,0 +1,41 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Jost', sans-serif;
+    background-color: #000625;
+    overflow-x: hidden;
+}
+
+p{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+// Mixin Styling
+@mixin section{
+    width: 100%;
+    height: fit-content;
+    padding: 70px 30px;
+}
+
+@mixin flex_box{
+   display: flex;
+   align-items: center;
+   justify-content: center; 
+}
+
+// Import Flies
+@import "banner";
+@import "about";
